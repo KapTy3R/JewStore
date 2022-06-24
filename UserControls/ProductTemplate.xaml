@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="JewStore.UserControls.ProductTemplate"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:JewStore.UserControls"
+             mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Viewbox>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130"></ColumnDefinition>
+            <ColumnDefinition Width="500"></ColumnDefinition>
+            <ColumnDefinition Width="195"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Image Name="ProductImage" Source="/Resources/picture.png"/>
+        <StackPanel Grid.Column="1" Margin="5">
+            <TextBlock Name="ProductName" Text="Название продукта"/>
+            <TextBlock Name="Description" Text="Описание"/>
+            <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Производитель: "/>
+                <TextBlock Name="Manufacturer" Text="Производитель"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Цена: "/>
+                <TextBlock Name="Cost" Text="цена"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Margin="5">
+            <TextBlock Text="Наличие на складе" FontSize="19" HorizontalAlignment="Center"/>
+            <TextBlock Text="0" Name="Stock" FontSize="40" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <Rectangle Grid.ColumnSpan="10" Margin="0,2,0,-1" Height="1" Fill="#FF76E383" VerticalAlignment="Bottom"/>
+    </Grid>
+    </Viewbox>
+</UserControl>

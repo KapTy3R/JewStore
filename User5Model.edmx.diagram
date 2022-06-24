@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0eda1d9f6faa4ab9ac2547fde7521d89" Name="Diagram1">
+        <EntityTypeShape EntityType="User5Model.Order" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="User5Model.OrderProduct" Width="1.5" PointX="7.5" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="User5Model.PickupPoint" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="User5Model.Product" Width="1.5" PointX="5.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="User5Model.Role" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="User5Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="User5Model.User" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="User5Model.FK__OrderProd__Order__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="User5Model.FK_Order_PickupPoint" ManuallyRouted="false" />
+        <AssociationConnector Association="User5Model.FK_Order_User" ManuallyRouted="false" />
+        <AssociationConnector Association="User5Model.FK__OrderProd__Produ__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="User5Model.FK__User__UserRole__398D8EEE" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
