@@ -149,6 +149,7 @@ namespace JewStore.Pages
                 ProductList.Children.Clear();
                 CreateProductList(Manufacturer, text.Text);
             }
+            else CreateProductList(Manufacturer);
         }
 
 
